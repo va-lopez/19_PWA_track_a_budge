@@ -20,15 +20,6 @@
     "url": "https://github.com/coding-boot-camp/unit18hw/issues"
   },
   "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
-  "devDependencies": {
-    "@webpack-cli/serve": "^1.4.0",
-    "file-loader": "^6.2.0",
-    "image-webpack-loader": "^6.0.0",
-    "webpack": "^5.37.1",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
-  },
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
