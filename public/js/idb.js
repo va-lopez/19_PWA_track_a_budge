@@ -2,7 +2,7 @@
 let db;
 
 //establish a connection to idb and set it to version 1
-const request = indexedDB.open('track_budget',1);
+const request = indexedDB.open('budget',1);
 
 //this event will emit if the database version changes
 request.onupgradeneeded = function(event){
@@ -56,7 +56,7 @@ function uploadData(){
     getAll.onsuccess = function() {
         //if there was data in indexedDb's store, send to api server
         if (getAll.result.length > 0) {
-            fetch('/api/transaction', {
+            fetch('/api/transaction/bulk', {
               method: 'POST',
               body: JSON.stringify(getAll.result),
               headers: {
